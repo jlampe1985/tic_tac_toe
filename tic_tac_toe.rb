@@ -136,7 +136,6 @@ class Game_config
         @player2_name = gets.chomp.capitalize
         puts "Player 2 pick a team : "
         @player2_team = gets.chomp.upcase
-        @board = [["_","_","_"],["_","_","_"],["_","_","_"]]
         if (@player1_team != "X" && @player1_team != "O") || (@player2_team != "X" && @player2_team != "O")
             initialize
         else
